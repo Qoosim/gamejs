@@ -20,6 +20,12 @@ canvas.addEventListener('click', (event) => {
   drawCircle();
 })
 
+canvas.addEventListener('mousemove', function(event) {
+  mouse.x = event.x;
+  mouse.y = event.y;
+  drawCircle();
+})
+
 function drawCircle() {
   ctx.fillStyle = 'blue';
   ctx.beginPath();
